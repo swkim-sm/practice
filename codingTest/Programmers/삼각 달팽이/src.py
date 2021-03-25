@@ -1,8 +1,6 @@
 def solution(n):
     answer = []
     path = [[-1, 0, 0]] # (x, y, num)
-    cur_num = 1
-    last_num = (n*(n+1))/2
 
     flag = 0
     for i in range(n, 0, -1):
