@@ -2,8 +2,7 @@
 def get_closer(left, right, hand, target):
     # keypad list, * = -1, # = -2
     keypad = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [-1, 0, -2]]
-    # target position (x, y)
-    flag = False
+
     target_pos = [-1, -1]
     left_pos = [-1, -1]
     right_pos = [-1, -1]
