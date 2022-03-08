@@ -15,17 +15,14 @@ for _ in range(q):
     queries.append(int(Input()))
 
 def dfs(visited, graph, cur, dp):
-    cnt = 1
     visited[cur] = True
     for child in graph[cur]:
         if not visited[child]:
-            visited[child] = True
-            cnt += dfs(visited, graph, child, dp)
-    dp[cur] = cnt
+            dp[cur] += dfs(visited, graph, child, dp)
     return dp[cur]
 
 visited = [False for _ in range(n+1)]
-dp = [0 for _ in range(n+1)]
+dp = [1 for _ in range(n+1)]
 
 dfs(visited, graph, r, dp)
 
