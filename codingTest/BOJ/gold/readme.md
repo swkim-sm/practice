@@ -2,3 +2,5 @@
 - graph_search/1068_트리 : bfs로 풀었는데 dfs로도 풀어보기
 - graph_search/15681_트리와쿼리 : dfs recursion error 뜬다면 sys.setrecursionlimit(10**6)
 - graph_search/1167_트리의지름 : 트리의 지름은 임의의 한 점에서 가장 먼 점에서 가장 먼 점까지의 거리
+- graph_search(dfs)/1103_게임 : sys.setrecursionlimit(10**6), dfs에서 시간초과 뜨면 dp 이용하기
+- greedy/2262_토너먼트만들기 : 시간초과나 메모리초과가 나는 건 추가적인 규칙이 있는 것이니까 규칙을 찾자.
