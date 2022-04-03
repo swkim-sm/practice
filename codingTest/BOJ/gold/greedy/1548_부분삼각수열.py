@@ -25,3 +25,20 @@ for x, y in idx_combi:
         answer = max(y-x+1, answer)
 
 print(answer)
+
+# more simple
+# 정렬 후, 앞의 작은 수 두 개의 합이 맨 뒤(가장 큰 수)보다 커지면 break
+'''
+n = int(input())
+seq = sorted(map(int, sys.stdin.readline().split()))
+res = 0
+
+for i in range(n-2):
+  for j in range(n-1, i, -1):
+    if seq[i] + seq[i+1] > seq[j]:
+      res = max(res, j-i+1)
+      break
+
+if len(seq) < 3:
+  res = len(seq)
+'''
